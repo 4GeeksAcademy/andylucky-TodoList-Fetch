@@ -1,11 +1,61 @@
-/* 
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.container {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.task {
+    position: relative;
+    padding: 10px;
+    margin: 5px 0;
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background: #d1f9d1;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.LaX{
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    font-size: 16px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    visibility: hidden;
+}
+.LaX.over{
+    cursor: pointer; 
+    visibility: visible;
+}
+.cutomList{
+    width: 600px;
+    background: white;
+    justify-content: center;
+    margin-bottom: 1px;
+    box-shadow: -4px -5px 20px 0px #b9b9b9;
+    flex-direction: column;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+.restoTareas{
+    margin-top: 9px;
+    margin-left: 6px;
+    font-size: 14px;
+    color: grey;
+}
