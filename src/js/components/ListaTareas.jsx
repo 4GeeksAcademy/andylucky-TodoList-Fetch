@@ -106,7 +106,7 @@ export const ListaTareas = (props) => {
                 headers: {
                     "Content-Type": "application/json"
                 },
-                body: JSON.stringify({todos}) 
+                body: JSON.stringify({todos: []}) 
             })
             if (!response.ok) {
                 throw new Error(`Error al crear usuario: ${response.status} ${response.statusText}`);
